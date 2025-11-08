@@ -92,4 +92,30 @@ export default function CookiesPage() {
           <h2>Cookies tiers</h2>
           <p>Certains cookies proviennent de services tiers :</p>
           <ul>
-            <li><strong>Google
+            <li><strong>Google Analytics :</strong> Pour l'analyse d'audience</li>
+            <li><strong>Google AdSense :</strong> Pour la publicité</li>
+            <li><strong>Partenaires d'affiliation :</strong> Pour le suivi des commissions</li>
+          </ul>
+          <p>
+            Ces services ont leurs propres politiques de confidentialité. Nous vous invitons
+            à les consulter pour plus d'informations.
+          </p>
+
+          <h2>Mises à jour</h2>
+          <p>
+            Cette politique peut être mise à jour pour refléter les changements dans nos pratiques
+            ou la législation. La date de dernière mise à jour est indiquée en haut de cette page.
+          </p>
+
+          <h2>Contact</h2>
+          <p>
+            Pour toute question sur notre utilisation des cookies :{' '}
+            <a href="/contact">contactez-nous</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
