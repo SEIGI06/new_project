@@ -48,4 +48,19 @@ export default function AboutPage() {
           <h2>Divulgation</h2>
           <p>
             Ce site contient des liens d'affiliation. Lorsque vous cliquez sur certains liens
-            et effectuez un achat, nous pouvons recevoir une commission
+            et effectuez un achat, nous pouvons recevoir une commission sans frais supplémentaires pour vous. Cela nous aide à maintenir ce site
+            et à continuer à créer du contenu de qualité. Nos recommandations restent
+            toujours objectives et indépendantes.
+          </p>
+
+          <h2>Contactez-nous</h2>
+          <p>
+            Vous avez une question, une suggestion ou souhaitez collaborer avec nous ?
+            N'hésitez pas à nous contacter via notre{' '}
+            <a href="/contact">formulaire de contact</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
