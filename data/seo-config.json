@@ -1,0 +1,11 @@
+{
+  "site_title": "Finance & Affiliation - Le Blog",
+  "site_description": "Blog d'expertise en finance, banques et investissement avec recommandations affiliées",
+  "site_url": "https://finance-affiliate-blog.com",
+  "default_image": "/assets/images/default-og.jpg",
+  "social_links": {
+    "twitter": "https://twitter.com/financeblog",
+    "facebook": "https://facebook.com/financeblog",
+    "linkedin": "https://linkedin.com/company/financeblog"
+  }
+}
