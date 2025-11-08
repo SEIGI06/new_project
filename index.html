@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance &amp; Affiliation - Le Blog | Comparatifs &amp; Guides 2025</title>
+    <meta name="description" content="Blog d'expertise en finance, banques et investissement avec recommandations affiliées. Guides complets et comparatifs pour optimiser vos finances.">
+    <meta name="keywords" content="finance, banque, investissement, affiliation, comparatif, guide">
+    <link rel="canonical" href="https://finance-affiliate-blog.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://finance-affiliate-blog.com/">
+    <meta property="og:title" content="Finance &amp; Affiliation - Le Blog">
+    <meta property="og:description" content="Blog d'expertise en finance, banques et investissement avec recommandations affiliées">
+    <meta property="og:image" content="https://finance-affiliate-blog.com/assets/images/default-og.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://finance-affiliate-blog.com/">
+    <meta property="twitter:title" content="Finance &amp; Affiliation - Le Blog">
+    <meta property="twitter:description" content="Blog d'expertise en finance, banques et investissement">
+    <meta property="twitter:image" content="https://finance-affiliate-blog.com/assets/images/default-og.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/ico/favicon.ico">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- JSON-LD Schema: Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Finance & Affiliation - Le Blog",
+      "url": "https://finance-affiliate-blog.com",
+      "logo": "https://finance-affiliate-blog.com/assets/images/logo.png",
+      "sameAs": [
+        "https://twitter.com/financeblog",
+        "https://facebook.com/financeblog",
+        "https://linkedin.com/company/financeblog"
+      ]
+    }
+    </script>
+    
+    <!-- JSON-LD Schema: WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Finance & Affiliation - Le Blog",
+      "url": "https://finance-affiliate-blog.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://finance-affiliate-blog.com/blog?search={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <a href="#home" class="navbar-brand">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" class="logo-icon">
+                        <rect width="32" height="32" rx="6" fill="var(--color-primary)"/>
+                        <path d="M8 16L14 10L18 14L24 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M20 8H24V12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="navbar-brand-text">Finance Blog</span>
+                </a>
+                
+                <button class="navbar-toggle" id="navToggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <div class="navbar-menu" id="navMenu">
+                    <a href="#home" class="navbar-link active">Accueil</a>
+                    <a href="#blog" class="navbar-link">Blog</a>
+                    <a href="#products" class="navbar-link">Produits</a>
+                    <a href="#about" class="navbar-link">À Propos</a>
+                    <a href="#contact" class="navbar-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="app">
+        <!-- Hero Section - Page Accueil -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Trouvez les Meilleures Offres Finance 2025</h1>
+                    <p class="hero-description">Guides complets, comparatifs détaillés et recommandations d'experts pour optimiser vos finances personnelles.</p>
+                    <div class="hero-cta">
+                        <a href="#blog" class="btn btn--primary btn--lg">Lire le Blog</a>
+                        <a href="#products" class="btn btn--secondary btn--lg">Voir les Offres</a>
+                    </div>
+                </div>
+                
+                <!-- AdSense Header -->
+                <div class="adsense-unit adsense-header" aria-label="Publicité">
+                    <div class="adsense-placeholder">AdSense Header 728x90</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Articles -->
+        <section class="featured-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Articles en Vedette</h2>
+                    <p class="section-subtitle">Nos derniers guides et comparatifs</p>
+                </div>
+                
+                <div class="articles-grid" id="featuredArticles">
+                    <!-- Articles will be dynamically loaded -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="blog-section">
+            <div class="container">
+                <div class="blog-layout">
+                    <!-- Main Content -->
+                    <div class="blog-main">
+                        <div class="section-header">
+                            <h2 class="section-title">Tous les Articles</h2>
+                            
+                            <!-- Filters -->
+                            <div class="blog-filters">
+                                <div class="filter-group">
+                                    <label for="categoryFilter" class="filter-label">Catégorie:</label>
+                                    <select id="categoryFilter" class="form-control">
+                                        <option value="all">Toutes</option>
+                                        <option value="Finance">Finance</option>
+                                        <option value="Investissement">Investissement</option>
+                                        <option value="Banques">Banques</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="filter-group">
+                                    <input type="search" id="searchInput" class="form-control" placeholder="Rechercher...">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="articles-list" id="articlesList">
+                            <!-- Articles will be dynamically loaded -->
+                        </div>
+                        
+                        <!-- Pagination -->
+                        <div class="pagination" id="pagination">
+                            <!-- Pagination buttons will be dynamically loaded -->
+                        </div>
+                    </div>
+                    
+                    <!-- Sidebar -->
+                    <aside class="blog-sidebar">
+                        <!-- AdSense Sidebar -->
+                        <div class="sidebar-widget adsense-unit">
+                            <div class="adsense-placeholder">AdSense Sidebar 300x250</div>
+                        </div>
+                        
+                        <!-- Categories -->
+                        <div class="sidebar-widget card">
+                            <div class="card__body">
+                                <h3 class="widget-title">Catégories</h3>
+                                <ul class="category-list" id="categoryList">
+                                    <!-- Categories will be dynamically loaded -->
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Popular Articles -->
+                        <div class="sidebar-widget card">
+                            <div class="card__body">
+                                <h3 class="widget-title">Articles Populaires</h3>
+                                <div class="popular-articles" id="popularArticles">
+                                    <!-- Popular articles will be dynamically loaded -->
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Newsletter -->
+                        <div class="sidebar-widget card newsletter-widget">
+                            <div class="card__body">
+                                <h3 class="widget-title">Newsletter</h3>
+                                <p class="widget-description">Recevez nos meilleurs conseils finance chaque semaine</p>
+                                <form id="newsletterForm" class="newsletter-form">
+                                    <input type="email" class="form-control" placeholder="Votre email" required>
+                                    <button type="submit" class="btn btn--primary btn--full-width">S'inscrire</button>
+                                </form>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- Article Detail View (Hidden by default) -->
+        <section id="articleDetail" class="article-detail-section" style="display: none;">
+            <div class="container">
+                <!-- Breadcrumb -->
+                <nav class="breadcrumb" id="breadcrumb" aria-label="Fil d'ariane">
+                    <!-- Breadcrumb will be dynamically loaded -->
+                </nav>
+                
+                <article class="article-content">
+                    <header class="article-header">
+                        <div class="article-meta">
+                            <span class="article-category" id="articleCategory"></span>
+                            <time class="article-date" id="articleDate"></time>
+                        </div>
+                        <h1 class="article-title" id="articleTitle"></h1>
+                        <p class="article-description" id="articleDescription"></p>
+                        <div class="article-author">
+                            <span>Par <strong id="articleAuthor"></strong></span>
+                        </div>
+                    </header>
+                    
+                    <div class="article-image-container">
+                        <img id="articleImage" class="article-image" alt="" loading="lazy">
+                    </div>
+                    
+                    <!-- AdSense In-Content Top -->
+                    <div class="adsense-unit adsense-in-content">
+                        <div class="adsense-placeholder">AdSense In-Content 336x280</div>
+                    </div>
+                    
+                    <div class="article-body" id="articleBody">
+                        <!-- Article content will be dynamically loaded -->
+                    </div>
+                    
+                    <!-- Affiliate Box -->
+                    <div class="affiliate-box" id="affiliateBox" style="display: none;">
+                        <div class="affiliate-box-header">
+                            <h3>🎯 Offres Recommandées</h3>
+                            <span class="affiliate-badge">Lien affilié</span>
+                        </div>
+                        <div id="affiliateProducts" class="affiliate-products">
+                            <!-- Affiliate products will be dynamically loaded -->
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Section -->
+                    <div class="faq-section" id="faqSection" style="display: none;">
+                        <h2>Questions Fréquentes</h2>
+                        <div id="faqList" class="faq-list">
+                            <!-- FAQ items will be dynamically loaded -->
+                        </div>
+                    </div>
+                    
+                    <!-- Related Articles -->
+                    <div class="related-articles">
+                        <h2>Articles Connexes</h2>
+                        <div class="articles-grid" id="relatedArticles">
+                            <!-- Related articles will be dynamically loaded -->
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="products-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Produits &amp; Offres Recommandés</h2>
+                    <p class="section-subtitle">Nos partenaires sélectionnés pour vous</p>
+                </div>
+                
+                <div class="products-grid" id="productsGrid">
+                    <!-- Products will be dynamically loaded -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <h2 class="section-title">À Propos de Finance Blog</h2>
+                    
+                    <div class="about-text">
+                        <p>Finance Blog est votre source d'expertise en matière de finance personnelle, banques et investissement. Depuis 2020, nous aidons des milliers de lecteurs à optimiser leurs finances grâce à des guides complets et des comparatifs objectifs.</p>
+                        
+                        <h3>Notre Mission</h3>
+                        <p>Démocratiser l'accès à l'information financière de qualité et aider chacun à prendre des décisions éclairées pour son avenir financier.</p>
+                        
+                        <h3>Nos Valeurs</h3>
+                        <ul class="values-list">
+                            <li><strong>Transparence</strong> - Nous indiquons clairement nos liens d'affiliation</li>
+                            <li><strong>Objectivité</strong> - Nos recommandations sont basées sur des analyses approfondies</li>
+                            <li><strong>Qualité</strong> - Chaque article est rédigé et vérifié par nos experts</li>
+                            <li><strong>Accessibilité</strong> - Nous rendons la finance compréhensible pour tous</li>
+                        </ul>
+                        
+                        <div class="disclosure-box">
+                            <h4>🔔 Divulgation</h4>
+                            <p>Ce site contient des liens d'affiliation. Lorsque vous cliquez sur ces liens et effectuez un achat ou une inscription, nous pouvons recevoir une commission. Cela n'affecte pas le prix que vous payez et nous permet de continuer à fournir du contenu gratuit de qualité.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-content">
+                    <h2 class="section-title">Contactez-Nous</h2>
+                    <p class="section-subtitle">Une question ? Une suggestion ? N'hésitez pas à nous écrire.</p>
+                    
+                    <div class="contact-layout">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="contactName" class="form-label">Nom *</label>
+                                <input type="text" id="contactName" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contactEmail" class="form-label">Email *</label>
+                                <input type="email" id="contactEmail" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contactSubject" class="form-label">Sujet *</label>
+                                <input type="text" id="contactSubject" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contactMessage" class="form-label">Message *</label>
+                                <textarea id="contactMessage" class="form-control" rows="6" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn--primary btn--lg">Envoyer</button>
+                            
+                            <div id="contactFormMessage" class="form-message" style="display: none;"></div>
+                        </form>
+                        
+                        <div class="contact-info">
+                            <div class="contact-info-item">
+                                <h3>📧 Email</h3>
+                                <p>contact@finance-affiliate-blog.com</p>
+                            </div>
+                            
+                            <div class="contact-info-item">
+                                <h3>🌐 Réseaux Sociaux</h3>
+                                <div class="social-links">
+                                    <a href="https://twitter.com/financeblog" target="_blank" rel="noopener noreferrer" class="social-link">Twitter</a>
+                                    <a href="https://facebook.com/financeblog" target="_blank" rel="noopener noreferrer" class="social-link">Facebook</a>
+                                    <a href="https://linkedin.com/company/financeblog" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Legal Pages Modal -->
+        <div id="legalModal" class="modal" style="display: none;">
+            <div class="modal-overlay" id="modalOverlay"></div>
+            <div class="modal-content">
+                <button class="modal-close" id="modalClose" aria-label="Fermer">&times;</button>
+                <div id="modalBody" class="modal-body">
+                    <!-- Legal content will be dynamically loaded -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 class="footer-title">Finance Blog</h4>
+                    <p class="footer-description">Votre guide expert en finance personnelle, investissement et banques en ligne.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Accueil</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#products">Produits</a></li>
+                        <li><a href="#about">À Propos</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Légal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="legal-link" data-page="privacy">Politique de Confidentialité</a></li>
+                        <li><a href="#" class="legal-link" data-page="cookies">Politique des Cookies</a></li>
+                        <li><a href="#" class="legal-link" data-page="terms">Mentions Légales</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="https://twitter.com/financeblog" target="_blank" rel="noopener noreferrer" class="social-link">Twitter</a>
+                        <a href="https://facebook.com/financeblog" target="_blank" rel="noopener noreferrer" class="social-link">Facebook</a>
+                        <a href="https://linkedin.com/company/financeblog" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Finance &amp; Affiliation Blog. Tous droits réservés.</p>
+                <p class="affiliate-disclaimer">Ce site contient des liens d'affiliation. Nous pouvons recevoir une commission sur les achats effectués via ces liens.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieBanner" class="cookie-banner" style="display: none;">
+        <div class="cookie-banner-content">
+            <p>🍪 Nous utilisons des cookies pour améliorer votre expérience. En continuant, vous acceptez notre <a href="#" class="legal-link" data-page="cookies">politique des cookies</a>.</p>
+            <div class="cookie-banner-actions">
+                <button id="acceptCookies" class="btn btn--primary btn--sm">Accepter</button>
+                <button id="rejectCookies" class="btn btn--secondary btn--sm">Refuser</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
