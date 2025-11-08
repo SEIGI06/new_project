@@ -126,3 +126,52 @@ export default function BlogPostPage({ params }: Props) {
               <AdsenseAd slot="in-article-top" format="rectangle" />
 
               {/*
+              {/* Contenu de l'article */}
+              <div
+                className="prose prose-lg max-w-none mt-8 mb-12"
+                dangerouslySetInnerHTML={{ __html: post.content }}
+              />
+
+              {/* Boîte d'affiliation si présente */}
+              {post.affiliateProduct && (
+                <AffiliateBox product={post.affiliateProduct} />
+              )}
+
+              {/* AdSense - Bottom article */}
+              <AdsenseAd slot="in-article-bottom" format="rectangle" />
+
+              {/* Tags */}
+              <div className="mt-8 pt-8 border-t border-gray-200">
+                <h3 className="text-lg font-semibold mb-4">Tags :</h3>
+                <div className="flex flex-wrap gap-2">
+                  {post.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Articles similaires */}
+              {relatedPosts.length > 0 && (
+                <div className="mt-12">
+                  <h2 className="text-2xl font-bold mb-6">Articles similaires</h2>
+                  <RelatedPosts posts={relatedPosts} />
+                </div>
+              )}
+            </div>
+
+            {/* Sidebar */}
+            <aside className="lg:col-span-1">
+              <Sidebar />
+            </aside>
+          </div>
+        </div>
+      </article>
+    </>
+  );
+}
+
